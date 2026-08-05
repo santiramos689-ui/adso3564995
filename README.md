@@ -1,6 +1,6 @@
 # adso3564995
 ![profile picture](src/images/dayron23.jpg)
-## Santiago Ramos Gomez 
+## Santiago Ramos Gómez 
 ### Análisis y Desarrollo de software
 ***Centro de procesos industriales y construccion***
 >SENA - Regional Caldas
