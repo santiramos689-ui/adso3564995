@@ -5,9 +5,14 @@
 body {
     background: linear-gradient(180grad, #09dd42, #2c332e);
     color: #fff9;
+    background-attachment: fixed:
     font-family: Poppins;
     min-height: 100dvh;
- 
+
+        &.emmet {
+        background: linear-gradient(to top, #7acb16, #192a05):
+        color: #0009;
+    }
     main {
         background: linear-gradient(to bottom, #0009, #0000);
         border-radius: 0.6rem;
