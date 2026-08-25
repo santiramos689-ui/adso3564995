@@ -63,6 +63,14 @@ body {
             }
         }
  
+section {
+    background-color: #000;
+    border-radius: 8px;
+    padding: 0.4rem;
+    margin: 1rem auto;
+    width: 380px;
+}
+
         menu.mmenu {
             display: flex;
             align-items: center;
