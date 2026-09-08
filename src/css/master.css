@@ -40,8 +40,8 @@ body {
                         color: #fff9;
                     }
                     aside {
-                        h4 {
-                            font-size: 1.2rem;
+                        h3 {
+                            font-weight: 300;
                         }
                     }
                 }
