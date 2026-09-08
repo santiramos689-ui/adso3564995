@@ -120,6 +120,12 @@ body {
         top: 6px;
         transition: all 0.4s ease-in;
         width: 40px;
+        a:is(:link, :visited) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }   
         &:hover {
             opacity: .9;
             transform: scale(1.1);
@@ -139,7 +145,11 @@ body {
 
         header.mmenu {
             text-align: center;
-
+            &.internal
+                h1{
+                    height:80px;
+                    width:80px;
+                }
             h1 {
                 font-size: 3rem;
                 font-weight: 200;
@@ -182,6 +192,10 @@ body {
             padding: 0.6rem;
             margin: 1rem auto;
             width: 360px;
+            height: subtitle{
+            padding-bottom: 0.2 rem;           
+            border-bottom: 2px dotted #fff;
+        }
         }
 
         menu.mmenu {
