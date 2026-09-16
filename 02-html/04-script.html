@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>02-text</title>
+    <title>04-script</title>
     <link rel="stylesheet" href="../src/css/master.css">
 </head>
 <body class="html">
@@ -16,13 +16,23 @@
     </nav>
     <main>
         <header class="mmenu">
-            <h1>02-text</h1>
+            <h1>04-script</h1>
             <img src="../src/images/logo-html.png" alt="Html">
-            <h3>description</h3>
+            <h3>Inserts JavaScript code</h3>
         </header>
         <section>
-            <h3 class="subtitle">subtitle:</h3>
+            <h3 class="subtitle">example:</h3>
+            <h4 class="user">Radamel Falcao</h4>
         </section>
     </main>
+    <script>
+        const user = document.querySelector('.user');
+        const answ = prompt("What's your name ?");
+        if (answ) { 
+            user.textContent = 'Welcome: '+answ;
+        } else{
+            user.textContent = 'Welcome | Guest!';
+        }
+    </script>
 </body>
 </html>
