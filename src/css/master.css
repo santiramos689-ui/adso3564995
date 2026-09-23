@@ -3,12 +3,13 @@
 
 /* Styles */
 body {
-    background: linear-gradient(to top, #09dd42, #000000);
+    background: linear-gradient(to top, #738678, #2c332e);
     background-attachment: fixed;
     color: #eddcb9aa;
     font-family: Poppins;
     min-height: 100dvh;
-  &.css {
+
+    &.css {
         background: linear-gradient(to top, #663399, #0e0715);
         background-attachment: fixed;
         color: #caa0f5aa;
@@ -23,10 +24,13 @@ body {
                 h3 {
                     font-weight: 300;
                 }
+                ul,ol {
+                    color: #fff9;
+                    text-align: left;
+                }
             }
            menu.mmenu {
                 a:is(:link, :visited) {
-                    color: #fff9;
                     &:hover {
                         background-color: #663399;
                         aside {
@@ -44,16 +48,17 @@ body {
                     }
                     aside {
                         h4 {
+                             color: #fff9;
                             font-size: 1.2rem;
                         }
                     }
                 }
-           }
-           section {
-            p, ul, ol {
-                color: #fff9;
-              }
            } 
+           section {
+                p, ul, ol {
+                    color: #fff9;
+                }
+            }
         }
     }
 
@@ -68,6 +73,9 @@ body {
                 }
                 img {
                     border: 4px solid #f9966baa;
+                }
+                h3 {
+                    font-weight: 300;
                 }
             }
            menu.mmenu {
@@ -88,12 +96,18 @@ body {
                         color: #fff9;
                     }
                     aside {
-                        h3 {
-                            font-weight: 300;
+                        h4 {
+                            color: #fff9;
+                            font-size: 1.2rem;
                         }
                     }
                 }
            } 
+           section {
+                p, ul, ol {
+                    color: #fff9;
+                }
+            }
         }
     }
 
@@ -168,12 +182,11 @@ body {
         top: 6px;
         transition: all 0.4s ease-in;
         width: 40px;
-        a:is(:link, :visited) {
+        a:is(:link, :visited) {   
             display: flex;
             justify-content: center;
             align-items: center;
-            
-        }   
+        }
         &:hover {
             opacity: .9;
             transform: scale(1.1);
@@ -193,11 +206,13 @@ body {
 
         header.mmenu {
             text-align: center;
-            &.internal
-                h1{
-                    height:80px;
-                    width:80px;
-                }
+            &.internal {
+                h1 { font-size: 2rem; }
+                img {
+                    height: 80px;
+                    width: 80px;
+                 }
+            }
             h1 {
                 font-size: 3rem;
                 font-weight: 200;
@@ -239,11 +254,17 @@ body {
             border-radius: 8px;
             padding: 0.6rem;
             margin: 1rem auto;
+            min-height: 240px;
             width: 360px;
-            height: subtitle
-            padding-bottom : 0.2 rem;           
-            border-bottom: 2px dotted #fff;
-        }
+            h3.subtitle {
+                font-weight: 500;
+                padding-bottom: 0.2rem;
+                border-bottom: 2px dotted #fff9;
+            }
+            p {
+                color: #fff9;
+                text-align: justify;
+            }
         }
 
         menu.mmenu {
@@ -315,4 +336,5 @@ body {
                 } 
             }
         }
-    
+    }
+}
