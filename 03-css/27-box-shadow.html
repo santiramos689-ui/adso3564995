@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>27-Box Shadow</title>
+    <link rel="stylesheet" href="../src/css/master.css">
+    <style>
+        section {
+            div.box {
+                background-color: #caa0f566;
+                border: 4px solid #fff;
+                height: 200px;
+                margin: 2rem auto;
+                width: 300px;
+
+                &.box1 {
+                    box-shadow: 0 0 12px #fff;
+                }
+                &.box2 {
+                    box-shadow: -10px -10px 24px 0 #fff;
+                }
+                &.box3 {
+                    box-shadow: 0 0 20px #fff inset;
+                }
+                &.box4 {
+                    box-shadow:  4px 4px 0 0 #ffcd00,
+                                 8px 8px 0 0 #003087,
+                                12px 12px 0 0 #c8102e;
+                }
+            }
+            div.images {
+                text-align: center;
+                img {
+                    width: 160px;
+                    &:first-of-type {
+                        box-shadow: 0 0 12px #fff;
+                    }
+                    &:last-of-type {
+                        filter: drop-shadow(0 0 12px #fff);
+                    }
+                }
+            }
+        }
+    </style>
+</head>
+<body class="css">
+    <nav class="goback">
+        <a href="index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#fff" viewBox="0 0 256 256">
+                <path d="M208,72H128V32a8,8,0,0,0-13.66-5.66l-96,96a8,8,0,0,0,0,11.32l96,96A8,8,0,0,0,128,224V184h80a16,16,0,0,0,16-16V88A16,16,0,0,0,208,72Zm0,96H120a8,8,0,0,0-8,8v28.69L35.31,128,112,51.31V80a8,8,0,0,0,8,8h88Z"></path>
+            </svg>
+        </a>
+    </nav>
+    <main>
+        <header class="mmenu internal">
+            <h1>27-Box Shadow</h1>
+            <img src="../src/images/logo-css.png" alt="Css">
+            <h3>Property attaches one or more shadows to an element.</h3>
+        </header>
+       <section>
+            <h3 class="subtitle">box-shadow: 0 0 12px #fff</h3>
+            <div class="box box1"></div>
+            <h3 class="subtitle">box-shadow: -10px -10px 24px 0 #fff</h3>
+            <div class="box box2"></div>
+            <h3 class="subtitle">box-shadow: 0 0 20px #fff inset</h3>
+            <div class="box box3"></div>
+            <h3 class="subtitle">box-shadow: multiple</h3>
+            <div class="box box4"></div>
+            <h3 class="subtitle">box-shadow VS drop-shadow()</h3>
+            <div class="images">
+                <img src="imgs/mario.png">
+                <img src="imgs/mario.png">
+            </div>
+        </section>
+    </main>
+</body>
+</html>
