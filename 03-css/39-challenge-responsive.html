@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dragon ball Z</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            transition: all 0.4s ease;
+        }
+
+        body {
+            background: url(imgs/Fondo\ z.jpg) no-repeat center;
+            background-size: cover;
+            font-family: sans-serif;
+            color: #fff;
+
+            main {
+                width: 1000px;
+                margin: 0 auto;
+                padding: 1rem;
+
+                header {
+                    figure.logo {
+                        background: url(imgs/Logo_Dragon_ball-removebg-preview.png) no-repeat center;
+                        background-size: contain;
+                        height: 160px;
+                        width: 400px;
+                        max-width: 100%;
+                        margin: 0 auto;
+                    }
+                }
+
+                .etiqueta {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    padding: 12px 16px;
+                    background-color: #00000066;
+                    font-weight: 700;
+                    font-size: 1.1rem;
+                    text-align: center;
+                    letter-spacing: 0.5px;
+                }
+
+                .contenedor {
+                    width: 960px;
+                    margin: 0 auto;
+                    padding: 20px 0;
+                    overflow: hidden;
+
+                    .carta {
+                        position: relative;
+                        float: left;
+                        width: 180px;
+                        margin: 0 30px 30px 30px;
+                        background-color: #000;
+                        border-radius: 12px;
+                        overflow: hidden;
+
+                        img {
+                            display: block;
+                            width: 100%;
+                        }
+
+                        &:hover {
+                            transform: scale(1.03);
+
+                            .etiqueta {
+                                transform: translateY(-20px);
+                            }
+                        }
+                    }
+                }
+
+                .bloque {
+                    margin-bottom: 24px;
+                    padding: 32px;
+                    background-color: #00000080;
+                    border-radius: 12px;
+                    overflow: hidden;
+
+                    .eli,
+                    .kord,
+                    .trixie,
+                    .pronto {
+                        position: relative;
+                        float: left;
+                        margin-right: 32px;
+                        border-radius: 12px;
+                        overflow: hidden;
+
+                        img {
+                            display: block;
+                            height: 185px;
+                        }
+                    }
+
+                    .descripcion {
+                        overflow: hidden;
+                        font-size: 0.92rem;
+                        color: #fff1c1;
+                        line-height: 1.65;
+                        text-align: justify;
+
+                        &:hover {
+                            color: #f28c1e;
+                        }
+                    }
+                }
+            }
+        }
+
+        @media (max-width: 1023px) {
+            body {
+                main {
+                    width: 700px;
+
+                    .contenedor {
+                        width: 480px;
+                    }
+                }
+            }
+        }
+
+        @media (max-width: 767px) {
+            body {
+                main {
+                    width: 100%;
+
+                    .contenedor {
+                        width: 100%;
+                        padding: 15px;
+
+                        .carta {
+                            float: none;
+                            width: 200px;
+                            margin: 0 auto 30px auto;
+                        }
+                    }
+
+                    .bloque {
+                        padding: 24px;
+
+                        .eli,
+                        .kord,
+                        .trixie,
+                        .pronto {
+                            float: none;
+                            width: 150px;
+                            margin: 0 auto 16px auto;
+
+                            img {
+                                height: 150px;
+                            }
+                        }
+
+                        .descripcion {
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <figure class="logo"></figure>
+        </header>
+        <div class="contenedor">
+            <div class="carta">
+                <img src="imgs/goku.jpg" alt="Goku" />
+                <div class="etiqueta">Goku</div>
+            </div>
+            <div class="carta">
+                <img src="imgs/vegeta.jpg" alt="Vegeta" />
+                <div class="etiqueta">Vegeta</div>
+            </div>
+            <div class="carta">
+                <img src="imgs/Krilin.jpg" alt="Krilin" />
+                <div class="etiqueta">Krilin</div>
+            </div>
+            <div class="carta">
+                <img src="imgs/Frezer.jpg" alt="Frezer" />
+                <div class="etiqueta">Frezer</div>
+            </div>
+        </div>
+        <div class="bloque">
+            <div class="eli">
+                <img src="imgs/goku.jpg" alt="Goku" />
+                <div class="etiqueta">Goku</div>
+            </div>
+            <div class="descripcion">
+                Goku es el protagonista de la serie Dragon Ball Z, conocido por su espíritu de lucha y su deseo de proteger la Tierra. A lo largo de la serie, se enfrenta a numerosos enemigos y alcanza niveles de poder extraordinarios, convirtiéndose en un héroe legendario.
+            </div>
+        </div>
+        <div class="bloque">
+            <div class="kord">
+                <img src="imgs/vegeta.jpg" alt="Vegeta" />
+                <div class="etiqueta">Vegeta</div>
+            </div>
+            <div class="descripcion">
+                Vegeta es el orgulloso príncipe de los saiyajines, conocido por su arrogancia y deseo de superar a Goku. A lo largo de la serie, evoluciona de un villano a un héroe, demostrando su fuerza y determinación.
+            </div>
+        </div>
+        <div class="bloque">
+            <div class="trixie">
+                <img src="imgs/Krilin.jpg" alt="Krilin" />
+                <div class="etiqueta">Krilin</div>
+            </div>
+            <div class="descripcion">
+                Krilin es un humano valiente y leal, conocido por su amistad con Goku y su habilidad en las artes marciales. A pesar de no ser tan fuerte como los saiyajines, su coraje y determinación lo hacen un miembro valioso del equipo.
+            </div>
+        </div>
+        <div class="bloque">
+            <div class="pronto">
+                <img src="imgs/Frezer.jpg" alt="Frezer" />
+                <div class="etiqueta">Frezer</div>
+            </div>
+            <div class="descripcion">
+                Frezer es un tirano galáctico conocido por su crueldad y ambición. Es uno de los villanos más icónicos de la serie, responsable de la destrucción del planeta Vegeta y de innumerables actos de maldad en el universo.
+            </div>
+        </div>
+    </main>
+</body>
+</html>
