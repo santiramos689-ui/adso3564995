@@ -3,11 +3,64 @@
 
 /* Styles */
 body {
-    background: linear-gradient(to top, #738678, #2c332e);
+    background: linear-gradient(to top, #45915a, #2c332e);
     background-attachment: fixed;
-    color: #eddcb9aa;
+    color: #fff9;
     font-family: Poppins;
     min-height: 100dvh;
+
+    &.js {
+        background: linear-gradient(to top, #f0bd4f, #0e0715);
+        background-attachment: fixed;
+        color: #f0bd4f;
+        main {
+            header.mmenu {
+                h1 {
+                    border-bottom: 2px solid #f0bd4f;
+                }
+                img {
+                    border: 4px solid #f0bd4f;
+                }
+                h3 {
+                    font-weight: 300;
+                }
+                ul,ol {
+                    color: #fff9;
+                    text-align: left;
+                }
+            }
+menu.mmenu {
+                a:is(:link, :visited) {
+                    &:hover {
+                        background-color: #f0bd4f;
+                        aside {
+                            h4 {
+                                color: #0009;
+                            }
+                        }
+                    }
+                    span {
+                        background-color: #f0bd4f;
+                        height: 50px;
+                        font-size: 1.4rem;
+                        width: 50px;
+                        color: #0009;
+                    }
+                    aside {
+                        h4 {
+                            color: #fff9;
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+           } 
+           section {
+                p, ul, ol {
+                    color: #fff9;
+                }
+            }
+        }
+    }
 
     &.css {
         background: linear-gradient(to top, #663399, #0e0715);
@@ -29,7 +82,7 @@ body {
                     text-align: left;
                 }
             }
-           menu.mmenu {
+menu.mmenu {
                 a:is(:link, :visited) {
                     &:hover {
                         background-color: #663399;
